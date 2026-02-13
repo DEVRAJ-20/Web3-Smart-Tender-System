@@ -43,12 +43,12 @@ const GovernmentLogin = () => {
     return (
         <div className="min-h-screen relative overflow-hidden bg-[#0B1220]">
 
-            {/* Background effects */}
+
             <div className="absolute top-[-200px] left-[-200px] w-[700px] h-[700px] bg-blue-600/20 rounded-full blur-[180px] animate-pulse" />
             <div className="absolute bottom-[-200px] right-[-200px] w-[700px] h-[700px] bg-indigo-500/10 rounded-full blur-[200px] animate-pulse" />
             <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:40px_40px] pointer-events-none" />
 
-            {/* Sticky Top Bar */}
+
             <div className="sticky top-0 z-50 backdrop-blur-xl bg-white/5 border-b border-white/10 px-12 py-5 flex justify-between items-center">
                 <div className="flex items-center gap-6">
                     <Link
@@ -67,16 +67,16 @@ const GovernmentLogin = () => {
             <div className="flex items-center justify-center min-h-[calc(100vh-80px)]">
                 <div className="relative z-10 w-full max-w-lg px-6 py-12">
 
-                    {/* Header */}
+
                     <div className="text-center mb-10">
                         <p className="text-gray-400 text-lg">
                             Sign in with your official credentials
                         </p>
                     </div>
 
-                    {/* Form Card */}
+
                     <div className="relative">
-                        {/* Overlay when wallet not connected */}
+
                         {!isConnected && (
                             <div className="absolute inset-0 z-10 bg-black/60 backdrop-blur-sm rounded-2xl flex flex-col items-center justify-center gap-4">
                                 <div className="text-4xl">🔒</div>
@@ -98,7 +98,7 @@ const GovernmentLogin = () => {
                             className={`bg-gradient-to-br from-white/10 via-white/5 to-transparent border border-white/10 rounded-2xl p-8 backdrop-blur-sm shadow-2xl transition-all duration-300 ${!isConnected ? 'opacity-40 pointer-events-none' : ''}`}
                         >
 
-                            {/* Name */}
+
                             <div className="mb-5">
                                 <label className="block text-sm font-medium text-gray-300 mb-2">
                                     Full Name
@@ -114,7 +114,7 @@ const GovernmentLogin = () => {
                                 />
                             </div>
 
-                            {/* Email */}
+
                             <div className="mb-5">
                                 <label className="block text-sm font-medium text-gray-300 mb-2">
                                     Official Email
@@ -130,7 +130,7 @@ const GovernmentLogin = () => {
                                 />
                             </div>
 
-                            {/* Employee ID */}
+
                             <div className="mb-5">
                                 <label className="block text-sm font-medium text-gray-300 mb-2">
                                     Employee ID
@@ -146,7 +146,7 @@ const GovernmentLogin = () => {
                                 />
                             </div>
 
-                            {/* Department */}
+
                             <div className="mb-5">
                                 <label className="block text-sm font-medium text-gray-300 mb-2">
                                     Department
@@ -170,7 +170,7 @@ const GovernmentLogin = () => {
                                 </select>
                             </div>
 
-                            {/* Position */}
+
                             <div className="mb-8">
                                 <label className="block text-sm font-medium text-gray-300 mb-2">
                                     Position
@@ -186,7 +186,7 @@ const GovernmentLogin = () => {
                                 />
                             </div>
 
-                            {/* Submit */}
+
                             <button
                                 type="submit"
                                 disabled={!isFormValid || !isConnected}
